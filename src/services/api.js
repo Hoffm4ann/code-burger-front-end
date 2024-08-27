@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiCodeBurger = axios.create({
-	baseURL: "https://devburger-e5y388789-diego-alan-hoffmanns-projects.vercel.app"
+	baseURL: "https://devburger-api-main-nzo1-6rz4oqtc7-diego-alan-hoffmanns-projects.vercel.app"
 });
 apiCodeBurger.interceptors.request.use(async config => {
 	const userData = await localStorage.getItem("codeburger:userData")
